@@ -16,6 +16,6 @@ if ~isempty(opts.initialization)
     opts.initialization = X0(:);            %check to be sure this is right
 end
 
-Y = quadopt(A, B', opts);
-X = Y;
+Y = matrix_quadopt(A, B', opts);
+X = Y';
 
